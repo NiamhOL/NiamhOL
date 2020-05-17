@@ -14,7 +14,7 @@
   }
   .header{
     /*Define the styling for the header class*/
-    padding: 40px;
+    padding: 60px;
     text-align: center;
     background:#ADD8E6;
     color: navy;
@@ -23,12 +23,12 @@
     /*Change the h1 font size in the header*/
     font-size: 40px;
   }
-  #tshirt{
-    /*position the tshirt icon left*/
+  #steth{
+    /*position the steth icon left*/
     float:left;
   }
-  #jeans{
-    /*position the jeans icon right*/
+  #present{
+    /*position the present icon right*/
     float:right;
   }
   .navigation{
@@ -65,7 +65,7 @@
 
   #sub_head{
   /*change the font size for the sub heading*/
-    font-size:12px;
+    font-size:16px;
   }
 /* Ensure proper sizing */
 * {
@@ -81,13 +81,13 @@
 /* Sidebar/left column */
 .side {
   flex: 20%; /* Set the width of the sidebar */
-  background-color: white; /* Grey background color */
+  background-color: white; /* white background color */
   padding: 20px; /* Some padding */
 }
 /* Main column */
 .main {
   flex: 80%; /* Set the width of the main content */
-  background-color: white; /* White background color */
+  background-color: white; /* white background color */
   padding: 20px; /* Some padding */
 }
 /*define the default styling for the product card*/
@@ -127,15 +127,15 @@
 <body>
   <!--Use a div to define a header - this will be styled using CSS (.header)-->
   <div class="header">
-    <img id="stethoscope" src="img/", width="150px">
-    <img id="jeans" src="img/icons/jeans-icon.png", width="150px">
+    <img id="steth" src="https://github.com/NiamhOL/Web-Application-Project-2020/blob/master/steth.png?raw=true", width="250px">
+    <img id="present" src="https://github.com/NiamhOL/Web-Application-Project-2020/blob/master/present.jpg?raw=true", width="250px">
     <h1>Meducate</h1>
     <p id="sub_head">Providing online support for doctors, clinicians, nurses, health professionals and the public.</p>
     
   </div>
   <div class="navigation">
-	<a href="Medcuatehome.html">Home</a>
-    <a href="CustomerNumbers.html">Customer Numbers</a>
+    <a href="Medcuatehome.html">Home</a>
+    <a href="MeducateCourse.html">Customer Numbers</a>
     <a href="Meducateabout.html">About Us</a>
     <a href="Medcuatecontact.html">Contact Us</a>
     <a href="Meducatelogin.html" class="right">Log In</a>
@@ -154,7 +154,6 @@
         <div class="main">
           <!--Add a product card to display a product, the content of this is variable using the DOM-->
             <div class="card">
-              <img id="card_img"src="img/products/jeans1.jpg" alt="Instructional Methods" style="width:50%" width="50px">
               <h1 id="card_head">Instructional Methods Short Course</h1>
               <p id="card_price"class="price">€99.99</p>
               <p id="card_desc">Introduction to Instructional methods, how to design and give presentations</p>
@@ -181,7 +180,6 @@ function Research(){
   }
   function Statistics(){
     // change the styling and content of the service card
-  document.getElementById("card_img").src = "img/products/jeans3.jpg"
   document.getElementById("card_head").innerHTML = "Statistical Methods";
   document.getElementById("card_price").innerHTML = "€29.99"
   document.getElementById("card_desc").innerHTML = "One to one detailed analysis of your research"
